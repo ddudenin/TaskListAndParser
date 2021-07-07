@@ -21,7 +21,7 @@ class ParserType1: ParserHandler {
     var next: ParserHandler?
     
     private struct PersonsData: Codable {
-        var data: [Person]
+        let data: [Person]
     }
     
     func handleParse(_ data: Data) -> [Person] {
@@ -39,7 +39,7 @@ class ParserType2: ParserHandler {
     var next: ParserHandler?
     
     private struct PersonsData: Codable {
-        var result: [Person]
+        let result: [Person]
     }
     
     func handleParse(_ data: Data) -> [Person] {
